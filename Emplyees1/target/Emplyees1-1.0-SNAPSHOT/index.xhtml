@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="jakarta.faces.html"
+      xmlns:f="jakarta.faces.core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:outputLabel for="name" value="name"/>
+            <h:inputText id="name" value="#{emplyeeBean.name}" required="true" requiredMessage="name is required"/>
+            <br></br>
+            <h:outputLabel for="surname" value="surname"/>
+            <h:inputText id="surname" value="#{emplyeeBean.surname}" required="true" requiredMessage="surname is required"/>
+            <br></br>
+            <h:outputLabel for="address" value="Numerator:"/>
+            <h:inputText id="address" value="#{emplyeeBean.address}" required="true" requiredMessage="address is required"/>
+            <br></br>
+            <h:commandButton value="Add" action="#{emplyeeBean.adder}"/>
+            <br></br>
+            <h:link outcome="dupa" value="qjwienr"/>
+        </h:form>
+    </h:body>
+</html>
