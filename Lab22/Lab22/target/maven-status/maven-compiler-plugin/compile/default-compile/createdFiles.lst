@@ -1,0 +1,11 @@
+javaee\lab22\resources\JakartaEE10Resource.class
+Servlets\LandingServlet.class
+javaee\lab22\JakartaRestConfiguration.class
+javaee\lab22\Book.class
+Servlets\AddBookServlet.class
+Servlets\AuthorServlet.class
+Servlets\BookServlet.class
+Servlets\NotificationEndpoint.class
+Servlets\DatabaseViewerServlet.class
+Servlets\MainPageServlet.class
+javaee\lab22\Author.class

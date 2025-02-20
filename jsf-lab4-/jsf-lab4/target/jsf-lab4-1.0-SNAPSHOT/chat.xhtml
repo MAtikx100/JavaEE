@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>Chat Room</title>
+</h:head>
+<h:body>
+
+    <h:form>
+        <h:outputText value="Logged in as: #{loginBean.username}" style="font-weight:bold; color:blue;" />
+        <br/><br/>
+
+
+        <h:outputLabel value="Your Message:" for="myMessage" />
+        <h:inputText id="myMessage" value="#{chatBean.myMessage}" />
+        <h:commandButton value="Send" action="#{chatBean.sendMessage}" />
+
+       
+        <h:dataTable value="#{chatBean.messages}" var="chatMessage">
+            <h:column>
+                <h:outputText value="#{chatMessage.username}: #{chatMessage.message}" />
+            </h:column>
+        </h:dataTable>
+    </h:form>
+</h:body>
+</html>

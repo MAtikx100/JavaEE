@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="jakarta.faces.html">
+    <h:head>
+        <title>Names</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:outputLabel for="name" value="Name"/>
+            <h:inputText id="name" value="#{userBean.name}" required="true" requiredMessage="name is required"/>
+            <br></br>
+            <h:outputLabel for="sname" value="Surname"/>
+            <h:inputText id="sname" value="#{userBean.surname}" required="true" requiredMessage="surname is required"/>
+            <br></br>
+            <h:message for="name" style="color:red;"/>
+            <h:message for="sname" style="color:red;"/>
+            <h:commandButton value="login" action="#{userBean.login}" />
+        </h:form>
+    </h:body>
+</html>

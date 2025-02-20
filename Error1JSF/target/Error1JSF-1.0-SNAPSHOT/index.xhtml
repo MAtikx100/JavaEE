@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="jakarta.faces.html">
+    <h:head>
+        <title>Division</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:outputLabel for="numerator" value="Numerator:"/>
+            <h:inputText id="numerator" value="#{divBean.numerator}" required="true" requiredMessage="Numerator is required"/>
+            <br/><br/>
+            <h:outputLabel for="denominator" value="Denominator:"/>
+            <h:inputText id="denominator" value="#{divBean.denominator}" required="true" requiredMessage="Denominator is required"/>
+            <br/><br/>
+            <h:commandButton value="Divide" action="#{divBean.performDivision}"/>
+            <br/><br/>
+            <h:outputText value="Result: #{divBean.result}" rendered="#{not empty divBean.result}"/>
+            <br/><br/>
+            <h:message for="numerator" style="color:red;"/>
+            <h:message for="denominator" style="color:red;"/>
+        </h:form>
+    </h:body>
+</html>
