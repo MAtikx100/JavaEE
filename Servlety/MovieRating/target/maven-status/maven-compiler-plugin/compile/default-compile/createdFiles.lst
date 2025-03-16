@@ -1,0 +1,5 @@
+javaee\movierating\RatingServlet.class
+javaee\movierating\JakartaRestConfiguration.class
+javaee\movierating\VoteServlet.class
+javaee\movierating\resources\JakartaEE10Resource.class
+javaee\movierating\Movie.class
